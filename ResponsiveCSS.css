@@ -2,18 +2,20 @@
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
+    text-align: center;
 }
 
 #container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 30px;
     grid-column: 15px;
+    
 }
 
 .box { 
-     border-radius: 15px;
-     background-color: rgb(47, 141, 204);   
+     border-radius: 4px;  
+    
 }
 
 figure {
@@ -29,6 +31,7 @@ figure {
 img {
     max-width: 220px;
     max-height: 150px;
+    
 }
 
 figcaption {
@@ -60,7 +63,7 @@ p {
 
  @media screen and (max-width: 414px) {
     #container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
  }
 
@@ -78,7 +81,8 @@ p {
 }  
 @media screen and (max-width:414px){    
     h1 { 
-        font-size: 3em;
+        font-size: 1.5em;
+        margin-left: 40px;
     }
 } 
 
@@ -97,3 +101,30 @@ p {
        font-size: 2em;
    }
 } 
+
+
+.textL{
+    text-align: justify;
+    padding: 20px;
+}
+
+
+@media(min-width: 500px, max-width 960px ){
+    .textL{
+        font-size: 10px;
+    }
+}
+
+
+@media(max-width: 499px){
+    .textL{
+        font-size: 12px;
+        padding-left: -15px;
+        padding-right: 0px;
+    }
+}
+
+
+.setMargin{
+    margin: 25px;
+}
